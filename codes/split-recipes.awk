@@ -15,5 +15,5 @@ BEGIN{
     
     # Q4. 본문을 "data/apicius/recipes-new/[번호] 영어 이름.txt" 파일로 쓰기
     OUTPUTFILENAME = "data/apicius/recipes-new/" name[1] ".txt"
-    print $0
+    print $2 > OUTPUTFILENAME
 }
